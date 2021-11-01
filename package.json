@@ -1,0 +1,16 @@
+{
+  "name": "instabot",
+  "version": "1.0.0",
+  "description": "Um bot para o instagram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marvin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "puppeteer": "^10.4.0",
+    "readline-sync": "^1.4.10"
+  }
+}
