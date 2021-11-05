@@ -24,5 +24,5 @@ async function start() {
     await publisher(env.INSTA_USER, env.INSTA_PASSWORD, image, movieData.subtitle);
    
 }
-//tt0111161
+
 start();

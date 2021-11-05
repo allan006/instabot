@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
 const iPhone = puppeteer.devices['iPhone 4'];
 
-// let options = {
-//   headless: false 
-// };
+let options = {
+  // headless: false 
+};
 
 async function publish (username, password, file, subtitle) {
   
