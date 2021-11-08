@@ -18,7 +18,7 @@ async function movieInfo(imdb) {
                 .then(response => {
                     const providers = response.data.results.BR.flatrate;
                     providers.forEach(element => {
-                        name = name+element.provider_name+"   ";
+                        name = name+"    -"+element.provider_name;
                     });
                     return name;
                 }).catch((err) => {
@@ -32,7 +32,7 @@ async function movieInfo(imdb) {
                 .then(response => {
                     const genres = response.data.genres;
                     genres.forEach(element => {
-                        genre = genre+element.name+"   ";
+                        genre = genre+"    -"+element.name;
                     });
                     return genre;
                 }).catch((err) => {
@@ -43,7 +43,7 @@ async function movieInfo(imdb) {
     const data = await movieData(imdb);
     const watch = await movieProviders(data.id);
     const genre = await movieGenre(data.id);
-    
+
     const movie = {
         name: data.title,
         subtitle: data.title+'\r\n'+genre+'\r\nAno: '+data.release_date.slice(0, 4)+
